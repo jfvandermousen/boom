@@ -1,0 +1,59 @@
+.main-ly {
+    max-width: 1400px;
+    padding: 0;
+    border-right:2px solid #212221;
+    border-left:2px solid #212221;
+}
+header {
+    color: whitesmoke;
+}
+
+.categories {
+    padding: 0 2em;
+    border-right: 0.1em solid #212221;
+    display:inline-grid;
+    align-items: flex-end;
+    border-bottom: 0.1em solid #212221;
+
+    a {
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        &:hover {
+         color:   #FBF872;
+        }
+    }
+}
+.news {
+    margin: 0 auto;
+    padding: 2em;
+    &:hover {
+        filter: hue-rotate(125deg);
+    }
+}
+
+
+.podcast{
+    height: 381px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem !important;
+    border-right: 0.1em solid #212221;
+    border-bottom: 0.1em solid #212221;
+    
+    background-image: linear-gradient(black, black),
+    url('/img/pexels-scott-webb-593158.jpg');
+    background-blend-mode: soft-light;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.book-col {
+    display: flex;
+    align-items: center;
+    height: 127px;
+    border-bottom: 0.1em solid #212221;
+    padding-left: 50px !important;
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+html {
+    margin-block-end: 0;
+}
+
+
+
+h1,h2,h3,h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+header {
+    color: whitesmoke;
+}
+
+.main-image {
+    background-image: url('/img/autri-taheri-k4CvkfS5CtA-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 650px;
+}
+
+.title-search {
+    padding: 1.8em 2em;
+    border-bottom: 0.1em solid #212221;
+    border-left: 0.1em solid #212221;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.circle {
+    width: 140px;
+    height: 140px;
+    background-color: yellow;
+    border-radius: 100%;
+
+}
+.menu{
+    padding: 1.8em 2em;
+    border-bottom: 0.1em solid #212221;
+}
+
+
+
+i.bi.bi-list.text-xl {
+    font-size: 2em;
+}
+
+.main-img {
+    max-width: inherit;
+    height: auto;
+}
+
+
+.news:nth-child(1) {
+    border-right: 0.1em solid #212221;
+}
+.news:nth-child(2) {
+    border-right: 0.1em solid #212221;
+}
+.card-body {
+    background-color: transparent;
+    padding: 1em 0;
+}
+.card {
+    width: unset;
+    padding: 1em;
+}
+.card-img-top {
+    height: 326px;
+    object-fit: cover;
+}
+.photoBy {
+    color: #343534;
+    font-weight: 500;
+    text-decoration:line-through;
+}
+.top-section {
+    flex-wrap: wrap-reverse;
+    position: relative;
+}
+.mobile-menu {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #212221;
+}
+.rotate::before {
+    transform: rotate(90deg);
+    font-style: oblique;
+}
+
+
+@media  (max-width: 768px) { 
+    .top-section {
+        flex-wrap: wrap-reverse;
+    }
+    .circle {
+        width: 150px;
+        height: 150px;
+        background-color: yellow;
+        border-radius: 100%;
+        align-self: flex-end;
+        position: relative;
+        top:25px;
+    }
+}
+@media  (min-width: 769px) { 
+    .top-section {
+        flex-wrap: wrap-reverse;
+    }
+    .circle {
+        width: 150px;
+        height: 150px;
+        background-color: yellow;
+        border-radius: 100%;
+        align-self: flex-end;
+        position: relative;
+        left: 110px;
+        bottom: 75px;
+    }
+}
+
+
+
+@media  (max-width: 576px) { 
+    .news {
+        padding: 1em;
+    }
+    .news:nth-child(3) {
+        display: none;
+    }
+}
+
+

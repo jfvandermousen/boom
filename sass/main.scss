@@ -1,0 +1,33 @@
+
+
+
+// Custom Variables
+
+$primary:#FBF872;
+$secondary:#609283;
+
+@use 'base';
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+    "extrapink":#EBD5E1,
+    "heavymetalbg":#343534,
+    "mainbg":#161616,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// CUSTOM CSS
+
+
