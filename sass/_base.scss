@@ -25,19 +25,20 @@ header {
 }
 .news {
     margin: 0 auto;
-    padding: 2em;
+
     &:hover {
         filter: hue-rotate(125deg);
     }
 }
 
 
+
 .podcast{
-    height: 381px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2rem !important;
+   // padding: 4.5rem 4rem 2.2rem 4rem !important;
     border-right: 0.1em solid #212221;
     border-bottom: 0.1em solid #212221;
     
@@ -48,12 +49,62 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
+
+    .podcast-col {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 220px;
+        padding: 0 4rem;
+    }
+    .svg-col {
+        padding-bottom: 3rem;
+    }
+    
 }
 
 .book-col {
     display: flex;
-    align-items: center;
-    height: 127px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 220px;
     border-bottom: 0.1em solid #212221;
-    padding-left: 50px !important;
+    padding: 0 4rem !important;
+}
+.digital-row {
+    border-right: 0.1em solid #212221;
+}
+.digital-img {
+
+    background-image: url('/img/matt-ridley-H-LIL57PHCc-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+footer {
+    padding: 4rem;
+}
+
+
+
+@media  (max-width: 576px) { 
+    .news {
+        padding: 1rem 2rem 0 2rem !important;
+    }
+    .news:nth-child(3) {
+        display: none;
+    }
+}
+@media (min-width: 576px) {
+    .news {
+        padding: 1rem 2rem !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .news {
+        padding: 2rem 3rem !important;
+    }
 }

@@ -82,6 +82,10 @@ i.bi.bi-list.text-xl {
     flex-wrap: wrap-reverse;
     position: relative;
 }
+@keyframes apparition {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 .mobile-menu {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -92,10 +96,15 @@ i.bi.bi-list.text-xl {
     flex-direction: column;
     color: white;
     background-color: #212221;
+    animation-name: apparition;
+    animation-duration: 0.7s;
 }
+
 .rotate::before {
     transform: rotate(90deg);
     font-style: oblique;
+    position: relative;
+    bottom: 3px;
 }
 
 
@@ -131,13 +140,5 @@ i.bi.bi-list.text-xl {
 
 
 
-@media  (max-width: 576px) { 
-    .news {
-        padding: 1em;
-    }
-    .news:nth-child(3) {
-        display: none;
-    }
-}
 
 
