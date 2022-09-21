@@ -1,12 +1,21 @@
 .main-ly {
     max-width: 1400px;
     padding: 0;
-    border-right:2px solid #212221;
-    border-left:2px solid #212221;
+    border-inline-end:2px solid #212221;
+    border-inline-start:2px solid #212221;
 }
 header {
     color: whitesmoke;
 }
+
+#mobileMenu a {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    &:hover {
+        color:   #FBF872;
+       }
+}
+
 
 .categories {
     padding: 0 2em;
@@ -39,8 +48,8 @@ header {
     flex-direction: column;
     justify-content: space-between;
    // padding: 4.5rem 4rem 2.2rem 4rem !important;
-    border-right: 0.1em solid #212221;
-    border-bottom: 0.1em solid #212221;
+    border-inline-end: 0.1em solid #212221;
+    border-block-end: 0.1em solid #212221;
     
     background-image: linear-gradient(black, black),
     url('/img/pexels-scott-webb-593158.jpg');
@@ -83,10 +92,40 @@ header {
     background-position: top left;
 }
 
+
+.main-image {
+    background-image: url('/img/autri-taheri-k4CvkfS5CtA-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 650px;
+
+    @media (max-width: 575px) {
+
+            background-position: top center;
+            height: 650px;
+        }
+}
+
 footer {
     padding: 4rem;
 }
 
+.bullet {
+    padding: 0 10px;
+}
+.links h2 {
+    font-size: 2.25rem;
+}
+// socila media
+
+i.bi {
+    font-size: 2em;
+    opacity: 0.5;
+}
+.social-media i:nth-child(-n+2) {
+    margin-right: 18px;
+}
 
 
 @media  (max-width: 576px) { 
@@ -106,5 +145,23 @@ footer {
 @media (min-width: 1200px) {
     .news {
         padding: 2rem 3rem !important;
+    }
+}
+@media (max-width: 768px) {
+    .digital-img {
+
+        background-image: url('/img/matt-ridley-H-LIL57PHCc-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+}
+@media (max-width: 575px) {
+    .digital-img {
+        height: 440px;
+        background-image: url('/img/matt-ridley-H-LIL57PHCc-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
     }
 }
