@@ -52,7 +52,7 @@ header {
     border-block-end: 0.1em solid #212221;
     
     background-image: linear-gradient(black, black),
-    url('/img/pexels-scott-webb-593158.jpg');
+    url('../img/pexels-scott-webb-593158.jpg');
     background-blend-mode: soft-light;
     
     background-size: cover;
@@ -86,7 +86,7 @@ header {
 }
 .digital-img {
 
-    background-image: url('/img/matt-ridley-H-LIL57PHCc-unsplash.jpg');
+    background-image: url('../img/matt-ridley-H-LIL57PHCc-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
@@ -94,7 +94,7 @@ header {
 
 
 .main-image {
-    background-image: url('/img/autri-taheri-k4CvkfS5CtA-unsplash.jpg');
+    background-image: url('../img/autri-taheri-k4CvkfS5CtA-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
@@ -150,7 +150,7 @@ i.bi {
 @media (max-width: 768px) {
     .digital-img {
 
-        background-image: url('/img/matt-ridley-H-LIL57PHCc-unsplash.jpg');
+        background-image: url('../img/matt-ridley-H-LIL57PHCc-unsplash.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
@@ -159,7 +159,7 @@ i.bi {
 @media (max-width: 575px) {
     .digital-img {
         height: 440px;
-        background-image: url('/img/matt-ridley-H-LIL57PHCc-unsplash.jpg');
+        background-image: url('../img/matt-ridley-H-LIL57PHCc-unsplash.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
